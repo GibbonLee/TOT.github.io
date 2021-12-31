@@ -21,14 +21,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="This is a quick start for newbies in HEP to get familiar with Linux server, C++ programing and so on.   It’s always hard for beginners to get familiar with HEP as you have to master both coding and p">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Getting Started with HEP Analysis">
 <meta property="og:url" content="http://yoursite.com/2021/12/31/Getting-Started-with-HEP-Analysis/index.html">
 <meta property="og:site_name" content="TrT">
+<meta property="og:description" content="This is a quick start for newbies in HEP to get familiar with Linux server, C++ programing and so on.   It’s always hard for beginners to get familiar with HEP as you have to master both coding and p">
+<meta property="og:image" content="http://yoursite.com/2021/12/31/Getting-Started-with-HEP-Analysis/searchtf1.png">
+<meta property="og:image" content="http://yoursite.com/2021/12/31/Getting-Started-with-HEP-Analysis/hsum.png">
 <meta property="article:published_time" content="2021-12-31T05:41:53.000Z">
-<meta property="article:modified_time" content="2021-12-31T05:41:53.808Z">
+<meta property="article:modified_time" content="2021-12-31T12:08:05.558Z">
 <meta property="article:author" content="TrT-TOT">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Programming">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="HEP">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2021/12/31/Getting-Started-with-HEP-Analysis/searchtf1.png">
 
 <link rel="canonical" href="http://yoursite.com/2021/12/31/Getting-Started-with-HEP-Analysis/">
 
@@ -127,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -137,7 +146,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">7</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a>
 
   </li>
   </ul>
@@ -190,8 +199,18 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-12-31 13:41:53" itemprop="dateCreated datePublished" datetime="2021-12-31T13:41:53+08:00">2021-12-31</time>
+              <time title="Created: 2021-12-31 13:41:53 / Modified: 20:08:05" itemprop="dateCreated datePublished" datetime="2021-12-31T13:41:53+08:00">2021-12-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HEP/" itemprop="url" rel="index"><span itemprop="name">HEP</span></a>
+                </span>
             </span>
 
           
@@ -219,7 +238,52 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <a id="more"></a>
+<p>This is a quick start for newbies in HEP to get familiar with Linux server, C++ programing and so on.</p>
+<!-- more -->
+
+<p>It’s always hard for beginners to get familiar with HEP as you have to master both coding and particle physics. This post is expected to lower the threshold of programing under Linux, so that to quickly get involved into some particular work. This post refers to many many articles or tutorials available on the internet. So in this aspect, what this post do is just telling you where you can find the reference to quickly get falimiar with one perticular field.</p>
+<p><strong>Note</strong>: Expected time consumption sections below is an estimated time to learn one thing. It assumes you only focus on one thing in this time. So, please don’t be frustrated if you are slower than the expected time. Instead, this time is to remind you to ask for help if you are stacked in one step for a long time.</p>
+<h1 id="Linux-and-Vim-Tutorial"><a href="#Linux-and-Vim-Tutorial" class="headerlink" title="Linux and Vim Tutorial"></a>Linux and Vim Tutorial</h1><p>For people always working under Windows, It’s natural to feel helpless when you face the Linux terminal for the first time. Some basic shell commands will tell you how to explore the world of a linux system. On the other hand, as a widely used built-in editor, Vim is famous for its sharp learning curve. Some basic knowledge about Vim will help you get free from the limit of mouse. I believe you would love the feeling of coding under Vim and Linux soon!</p>
+<h2 id="Linux-Tutorial"><a href="#Linux-Tutorial" class="headerlink" title="Linux Tutorial"></a>Linux Tutorial</h2><p>The first part is about Linux tutorial. There is a very easy-to-understand tutorial in <a href="https://ryanstutorials.net/linuxtutorial/" target="_blank" rel="noopener">Linux Tutorial for Beginners</a>. You are expected to master the basic aspects like file and directory operation, file system navigation, the concept of wildcards, permissions and so on. The basic idea about shell scripts should also be familiared.</p>
+<h3 id="A-Quick-Task"><a href="#A-Quick-Task" class="headerlink" title="A Quick Task"></a>A Quick Task</h3><p>On the ui of USTC, You can find many files under this directory: <code>ustcfs/BES3User/2019/jiazk/sigma2pg/STana/1/incMC/round02</code>.</p>
+<p>1, Please count how many files with <code>root</code> format are there.</p>
+<p>2, for text files named after <code>*.bosslog</code>, please count the number of good files. A good file is defined as containing both <code>ApplicationMgr       INFO Application Manager Finalized successfully</code> and <code>ApplicationMgr       INFO Application Manager Terminated successfully</code>.</p>
+<p>3, Write these two tasks into a shell script.</p>
+<p>Tips: The possible commands may be used include <code>find</code>, <code>grep</code>, <code>ls</code>. The detailed usage of the commands can be accessed using <code>man &lt;command-name&gt;</code>,<code>&lt;command-name&gt; --help</code> or Goodle.</p>
+<h3 id="Expected-Time-Consumption"><a href="#Expected-Time-Consumption" class="headerlink" title="Expected Time Consumption"></a>Expected Time Consumption</h3><p>A week for study and one day for the task.</p>
+<h2 id="Initial-Exploration-in-Vim"><a href="#Initial-Exploration-in-Vim" class="headerlink" title="Initial Exploration in Vim"></a>Initial Exploration in Vim</h2><p>The most famous question about Vim on Stackoverflow is “How do I exit the Vim editor”. I guess people confused about that must not know the command <code>vimtutor</code>, an official hands-on tutorial for beginners to get familiar with Vim.</p>
+<p>Please follow this tutorial to get familiar with Vim. You are expected to know how to edit and skim through a file with only the keyboard. You should also understand the philosphy of Vim – how to master the file edition with the help of three edition modes.</p>
+<h3 id="Expected-Time-Consumption-1"><a href="#Expected-Time-Consumption-1" class="headerlink" title="Expected Time Consumption"></a>Expected Time Consumption</h3><p>1-2 days.</p>
+<h3 id="Further-Reading"><a href="#Further-Reading" class="headerlink" title="Further Reading"></a>Further Reading</h3><p>When you are spared, I strongly recommand you to learn more about Vim. I list two references here, one is a detailed introduction to Vim, and the other is about how to build a so called C++ IDE with vim.</p>
+<p><a href="https://github.com/wsdjeg/vim-galore-zh_cn" target="_blank" rel="noopener">Vim 从入门到精通</a></p>
+<p><a href="https://www.zhihu.com/question/47691414/answer/373700711" target="_blank" rel="noopener">如何在 Linux 下利用 Vim 搭建 C/C++ 开发环境?</a></p>
+<p>You may also refer to my <code>vimrc</code> in <code>/home/jiazk/.vimrc</code> from L. 1 to L. 130 for some useful plugin-indepent configs.</p>
+<h1 id="Get-Started-with-C-Programing"><a href="#Get-Started-with-C-Programing" class="headerlink" title="Get Started with C++ Programing"></a>Get Started with C++ Programing</h1><p>I suppose you have some programing basics about <code>C</code> but have not tried to program under Linux or using <code>C++</code>. So this section is designed to make you know how to compile an executable program under Linux and the major difference between <code>C</code> and <code>C++</code>.</p>
+<p>You are expected to get familiar with some most frequently used concepts in <code>C++</code>, like namespace, class, vector and iterator. This is intended to make the <code>C++</code> code “readable” for you because it would spend you some time to progress from modifying existing code to coding your own code.</p>
+<p>An excerpt of “C++ Primer” can be found in <a href="https://rec.ustc.edu.cn/share/5b3196f0-6a0f-11ec-84b8-e1beac3af7d1" target="_blank" rel="noopener">USTC netdisc</a>. The book has some hands-on tests, which I suggest to do every of them.</p>
+<h2 id="A-Quick-Task-1"><a href="#A-Quick-Task-1" class="headerlink" title="A Quick Task"></a>A Quick Task</h2><p>Two code blocks are shown below. Please predict the program output first. Then, execute them under Linux and check the output.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Test about parameter transportation between function - 1</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">    a=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">0</span>;</span><br><span class="line">    test(a);</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Test about parameter transportation between function - 2</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> *a)</span></span>&#123;</span><br><span class="line">    *a=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">0</span>;</span><br><span class="line">    test(&amp;a);</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Expected-Time-Consumption-2"><a href="#Expected-Time-Consumption-2" class="headerlink" title="Expected Time Consumption"></a>Expected Time Consumption</h3><p>3-7 days for study and one minute for the test~</p>
+<h2 id="Further-Reading-1"><a href="#Further-Reading-1" class="headerlink" title="Further Reading"></a>Further Reading</h2><p>Google is a good reference for C++ study, also the <a href="https://rec.ustc.edu.cn/share/9e5f29f0-6a0f-11ec-a761-0bc4d8814d81" target="_blank" rel="noopener">“C++ Primer”</a>.</p>
+<h1 id="ROOT-Tutorial"><a href="#ROOT-Tutorial" class="headerlink" title="ROOT Tutorial"></a>ROOT Tutorial</h1><blockquote><p>ROOT is an object-oriented program and library developed by CERN. It was originally designed for particle physics data analysis and contains several features specific to this field, but it is also used in other applications such as astronomy and data mining.</p>
+<footer><strong>Wikipedia</strong><cite><a href="https://en.wikipedia.org/wiki/ROOT" target="_blank" rel="noopener">en.wikipedia.org/wiki/ROOT</a></cite></footer></blockquote>
+
+<p>ROOT is a very mature framework based on C++. All the modern HEP experiments use ROOT more or less. So it’s necessary to get familiar with the usage of ROOT before get involved into your work. A well written primer can be found in <a href="https://root.cern/primer/" target="_blank" rel="noopener">ROOT Primer</a>.</p>
+<p>By looking through the primer, the most important concept you have to master is histogram. You are expected to know what a histogram is, how to convert data into histogram, how to draw them, how to customize their properties… Histogram is very important because physics analysis in HEP are all statistical analysis and histogram is an useful and powerful tool to understand many things in statictics.</p>
+<p>Data IO is also very important for the subsequent work because ROOT has its own data IO library. So it’s necessary to know how to read and write data from or into a ROOT file.</p>
+<p>Please skip the section about “Toy Monte Carlo Experiments” and “ROOT in Python”.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>Doxygen document is a collection of all the classes and libraries in a C++ project. A good C++ project always has a well-explained doxygen document, which is a very good reference for getting familiar with a C++ project.</p>
+<p>You may refer to <a href="https://root.cern/doc/master/" target="_blank" rel="noopener">ROOT Doxygen Document</a> for all the functions available in a class. For example, if you want to know something about <code>TF1</code> class, search <code>TF1</code> in the search box in th upper right corner.</p>
+<p>By clicking the link marked as yellow in the following plot, you’ll be directed to <a href="https://root.cern/doc/master/classTF1.html" target="_blank" rel="noopener">this webpage</a>. and you can find all you want to know here!<br><img src="searchtf1.png" alt=""></p>
+<p><a href="https://rec.ustc.edu.cn/share/43188960-6a17-11ec-ae24-17eaeb6fea7d" target="_blank" rel="noopener">ROOT User Guide</a> is a more detailed tutorial for ROOT. You may use it as a dictionary.</p>
+<p>Some official code examples can be found in <code>$ROOTSYS/tutorials</code>. The examples are fruitful so you’ll always find what you want to achieve can be found in the official examples. All you need to do is to customize them~</p>
+<h2 id="Some-Tests"><a href="#Some-Tests" class="headerlink" title="Some Tests"></a>Some Tests</h2><p>1, copy <code>$ROOTSYS/tutorials/hist/hsum.C</code> to your own directory and execute it. By customizing the script, change the black, squared dots into blue, circle ones. Change the color of error bar into<br>red. For the histogram with very small dots and thin error bars at the range of [-2,1], understand why it looks like that and draw it as the grey filled area shown in the plot. Let the grids disappear.<br><img src="hsum.png" alt=""></p>
+<p>2, copy <code>$ROOTSYS/tutorials/tree/tree1.C</code> to your own directory and execute it. For the generated file <code>tree1.root</code>, select the events satisfying <code>px&gt;0</code> and save them into a new root file. Realize this task with the following method: Use <code>TTree</code> class and <code>CopyTree</code> function in it. You may refer to the <code>CreateFriendTree()</code> function in <code>$ROOTSYS/tutorials/tree/treefriend.C</code>. Then, repeat the job using <code>TChain</code> class instead of <code>TTree</code>. What’s the difference between <code>TTree</code> and <code>TChain</code>?</p>
+<h2 id="Expected-Time-Consumption-3"><a href="#Expected-Time-Consumption-3" class="headerlink" title="Expected Time Consumption"></a>Expected Time Consumption</h2><p>The study period is expected from one week to one month. Half of a day for tests.</p>
+
     </div>
 
     
@@ -242,6 +306,12 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/Programming/" rel="tag"># Programming</a>
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/HEP/" rel="tag"># HEP</a>
+          </div>
 
         
   <div class="post-widgets">
@@ -323,6 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-and-Vim-Tutorial"><span class="nav-number">1.</span> <span class="nav-text">Linux and Vim Tutorial</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-Tutorial"><span class="nav-number">1.1.</span> <span class="nav-text">Linux Tutorial</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-Quick-Task"><span class="nav-number">1.1.1.</span> <span class="nav-text">A Quick Task</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Expected-Time-Consumption"><span class="nav-number">1.1.2.</span> <span class="nav-text">Expected Time Consumption</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Initial-Exploration-in-Vim"><span class="nav-number">1.2.</span> <span class="nav-text">Initial Exploration in Vim</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Expected-Time-Consumption-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">Expected Time Consumption</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Further-Reading"><span class="nav-number">1.2.2.</span> <span class="nav-text">Further Reading</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Get-Started-with-C-Programing"><span class="nav-number">2.</span> <span class="nav-text">Get Started with C++ Programing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Quick-Task-1"><span class="nav-number">2.1.</span> <span class="nav-text">A Quick Task</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Expected-Time-Consumption-2"><span class="nav-number">2.1.1.</span> <span class="nav-text">Expected Time Consumption</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Further-Reading-1"><span class="nav-number">2.2.</span> <span class="nav-text">Further Reading</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ROOT-Tutorial"><span class="nav-number">3.</span> <span class="nav-text">ROOT Tutorial</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">3.1.</span> <span class="nav-text">References</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Tests"><span class="nav-number">3.2.</span> <span class="nav-text">Some Tests</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Expected-Time-Consumption-3"><span class="nav-number">3.3.</span> <span class="nav-text">Expected Time Consumption</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
       <div class="site-overview-wrap sidebar-panel">
@@ -342,13 +413,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
